@@ -1,0 +1,71 @@
+module.exports = {
+  parser: "babel-eslint",
+  env: {
+    jest: true,
+    browser: true,
+    es6: true,
+  },
+  extends: ['airbnb', 'prettier', 'prettier/react'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+    __DEV__: true,
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+    ecmaFeatures: {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  plugins: ['react', 'jsx-a11y', 'import', 'react-hooks', 'prettier'],
+  rules: {
+    'func-names': 'off',
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'react/no-array-index-key': 'off',
+    'import/named': 'off',
+    'no-nested-ternary': 'off',
+    'import/no-self-import': 'off',
+    'react/no-unescaped-entities': 'off',
+    'import/order': 'off',
+    'import/no-duplicates': 'off',
+    'import/no-cycle': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
+    'import/no-useless-path-segments': 'off',
+    'array-callback-return': 'off',
+    'no-console': 'off',
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
+    'import/prefer-default-export': 'off',
+    'no-unused-vars': ['error', { varsIgnorePattern: '_' }],
+    'react/jsx-one-expression-peer-line': 'off',
+    'global-require': 'off',
+    'react-native/no-raw-text': 'off',
+    'no-undef': 'off',
+    'no-param-reassign': 'off',
+    'no-underscore-dangle': 'off',
+    'no-lone-blocks': 'off',
+    'no-unused-expressions': 'off',
+    'react/jsx-no-bind': 'off',
+    camelcase: 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-props-no-spreading': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    // 'react/require-default-props': 'off',
+    'no-await-in-loop': 'off',
+    'react/prop-types': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      'babel-plugin-root-import': {
+        rootPathSuffix: 'src',
+      },
+    },
+  },
+};

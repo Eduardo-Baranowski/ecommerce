@@ -1,5 +1,5 @@
-import TextButton from "./TextButton";
+import TextButton from './TextButton';
+import FormInput from './FormInput';
+import IconButton from './IconButton';
 
-export {
-    TextButton
-}
+export { TextButton, FormInput, IconButton };
